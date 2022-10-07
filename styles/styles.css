@@ -1,0 +1,13 @@
+body{
+    display: grid;
+    column-gap: 30px;
+    background: linear-gradient(180deg, #C8D8FE, #B5B1E6);
+    margin: 0px;
+}
+.barra-navegacao{
+    background-color: white;
+    padding: 10px;
+}
+.barra-navegacao > a{
+    margin-left: 50px;
+}
