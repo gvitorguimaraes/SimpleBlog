@@ -1,13 +1,115 @@
 body{
     display: grid;
     column-gap: 30px;
-    background: linear-gradient(180deg, #C8D8FE, #B5B1E6);
+    background-image: linear-gradient(180deg, #766ce4, #b7b2f1);
     margin: 0px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(5, auto);
 }
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('/fonts/coolvetica-rg.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Barra de navegação */
+
+header{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-bottom: 3px;
+    border-radius: 0px 0px 20px 20px;
+}
+
 .barra-navegacao{
-    background-color: white;
-    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 13%;
 }
+
 .barra-navegacao > a{
-    margin-left: 50px;
+    text-decoration: none;
+    font-family: 'Coolvetica';
+    font-size: 22px;
+    margin: 20px;
+    color: #766ce4;
+}
+
+.feed{
+    grid-column: 2;
+    grid-row: 2;
+    font-family: 'Coolvetica';
+}
+
+.feed > h1{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.feed > section{
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.grid-post-titulo{
+    grid-column: 1 / 3;
+    text-align: center;
+}
+.grid-post-imagem{
+    grid-column: 1;
+    margin-right: 20px;
+    align-items: center;
+    align-self: center;
+}
+.grid-post-conteudo{
+    grid-column: 2;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.sobre{
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: 60px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.contato{
+    grid-column: 2;
+    grid-row: 4;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+footer{
+    grid-column: 2;
+    grid-row: 5;
+    background-color: #b7b2f1;
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
